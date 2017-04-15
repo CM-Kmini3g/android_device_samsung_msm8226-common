@@ -148,6 +148,10 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     ueventd.qcom.rc
 
+# Recovery
+PRODUCT_PACKAGES += \
+    imgdiff
+
 # Wifi
 PRODUCT_PACKAGES += \
     dhcpcd.conf \
