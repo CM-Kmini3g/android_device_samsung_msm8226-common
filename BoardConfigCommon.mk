@@ -27,8 +27,8 @@ TARGET_CPU_VARIANT := krait
 AUDIO_FEATURE_ENABLED_LOW_LATENCY_CAPTURE := true
 BOARD_USES_ALSA_AUDIO := true
 
-# Control flag between KM versions
-TARGET_HW_KEYMASTER_V03 := true
+# Keymaster
+TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true

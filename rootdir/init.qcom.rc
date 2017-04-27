@@ -590,6 +590,11 @@ service wcnss-service /system/bin/wcnss_service
     group system wifi
     oneshot
 
+
+on init 
+# Set permissions for persist partition.
+    chmod 0664 /sys/devices/virtual/graphics/fb0/idle_time
+
 # WPA
 service p2p_supplicant /system/bin/wpa_supplicant \
     -ip2p0 -Dnl80211 -c/data/misc/wifi/p2p_supplicant.conf \
